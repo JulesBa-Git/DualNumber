@@ -36,9 +36,9 @@ public:
 
     void printDual() const;
 
-    Dual<_Tp>& operator+=(const Dual<_Tp>& d){
-        number_ += d.number_;
-        derivative_ += d.derivative_;
+    Dual<_Tp>& operator+=(const Dual<_Tp>& rhs){
+        number_ += rhs.number_;
+        derivative_ += rhs.derivative_;
         return *this;
     }
     
