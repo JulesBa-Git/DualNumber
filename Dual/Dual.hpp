@@ -40,7 +40,7 @@ public:
         number_ += rhs.number_;
         derivative_ += rhs.derivative_;
         return *this;
-    }
+    } 
     
     //passing lhs by value helps optimize chained plus (a+b+c)
     friend Dual<_Tp> operator+(Dual<_Tp> lhs, const Dual<_Tp>& rhs) {
